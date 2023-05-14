@@ -7,6 +7,8 @@ import { useNavigate } from "react-router-dom";
 export default function Login({ setIsAuth }) {
   let navigate = useNavigate();
 
+  
+
   const signInWithGoogle = () => {
     signInWithPopup(auth, provider).then((result) => {
       localStorage.setItem("isAuth", true);
